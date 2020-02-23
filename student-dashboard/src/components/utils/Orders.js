@@ -14,11 +14,11 @@ function createData(id, date, name, shipTo, paymentMethod, amount) {
 }
 
 const rows = [
-  createData(0, '16 Mar, 2019', 'Elvis Presley', 'Tupelo, MS', 'VISA ⠀•••• 3719', 312.44),
-  createData(1, '16 Mar, 2019', 'Paul McCartney', 'London, UK', 'VISA ⠀•••• 2574', 866.99),
-  createData(2, '16 Mar, 2019', 'Tom Scholz', 'Boston, MA', 'MC ⠀•••• 1253', 100.81),
-  createData(3, '16 Mar, 2019', 'Michael Jackson', 'Gary, IN', 'AMEX ⠀•••• 2000', 654.39),
-  createData(4, '15 Mar, 2019', 'Bruce Springsteen', 'Long Branch, NJ', 'VISA ⠀•••• 5919', 212.79),
+  createData(0, '16 Mar, 2020', 'SPCC', '511', 'Mahendra', '2h 30m'),
+  createData(1, '17 Mar, 2020', 'SE', '706', 'Prasad Lalit', '3h'),
+  createData(2, '18 Mar, 2020', 'Machine Learning', '305', 'Sujata', '2h 30m'),
+  createData(3, '19 Mar, 2020', 'DWM', '403', 'Sundary', '3h'),
+  createData(4, '20 Mar, 2020', 'Mechanics', '601', 'Srija', '2h 30m'),
 ];
 
 function preventDefault(event) {
@@ -40,10 +40,10 @@ export default function Orders() {
         <TableHead>
           <TableRow>
             <TableCell>Date</TableCell>
-            <TableCell>Name</TableCell>
-            <TableCell>Ship To</TableCell>
-            <TableCell>Payment Method</TableCell>
-            <TableCell align="right">Sale Amount</TableCell>
+            <TableCell>Exam</TableCell>
+            <TableCell>Room</TableCell>
+            <TableCell>Teacher</TableCell>
+            <TableCell align="right">Duration</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>

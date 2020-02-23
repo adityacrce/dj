@@ -14,6 +14,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import { mainListItems, secondaryListItems } from './listItems';
+import logo from './logo.png';
 import Logout from '../auth/Logout';
 
 const drawerWidth = 240;
@@ -121,8 +122,9 @@ const SideDrawer = () => {
                 >
                     <MenuIcon />
                 </IconButton>
+                <img src={logo} alt="4foldkit" />
                 <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
-                    Dashboard
+                    FourFoldKit
                 </Typography>
                 <IconButton color="inherit">
                     <Badge badgeContent={4} color="secondary">

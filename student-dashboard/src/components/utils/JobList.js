@@ -14,8 +14,18 @@ const JobList = props => {
                 {props.items.map(job => 
                     <SimpleCard 
                         key={job.id} 
+                        id={job.id}
                         perks={job.perks}
                         org={job.org}
+                        skills={job.skills}
+                        designation={job.designation}
+                        salary={job.salary}
+                        address={job.address}
+                        info={job.info}
+                        phone={job.phone}
+                        openings={job.openings}
+                        deadline={job.deadline}
+                        date={job.date}
                     />
                 )}
             </React.Fragment>

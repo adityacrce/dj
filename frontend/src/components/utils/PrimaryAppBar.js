@@ -18,6 +18,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
 import { useHistory, Link } from 'react-router-dom';
+import logo from './logo.png';
 
 import { AuthContext } from '../context/auth-context';
 import Logout from '../auth/Logout';
@@ -125,9 +126,9 @@ const PrimaryAppBar = () => {
               <MenuIcon />
             </IconButton>
           )}
-          
+          <img src={logo} alt="4foldkit" />
           <Typography variant="h6" noWrap>
-            App Name
+            FourFoldKit
           </Typography>
           {!auth.isLoggedIn && (
             <Button color="inherit" style={{ marginLeft: "60vw" }}>

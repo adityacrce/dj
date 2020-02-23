@@ -11,6 +11,7 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import logo from './logo.png';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -37,7 +38,8 @@ const PrimaryAppBar = () => {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
-            App Name
+          <img src={logo} alt="4foldkit" />
+            FourFoldKit
           </Typography>
           {!auth.isLoggedIn && (
               <Button color="inherit">

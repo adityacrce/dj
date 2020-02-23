@@ -18,9 +18,9 @@ export default function Deposits() {
   const classes = useStyles();
   return (
     <React.Fragment>
-      <Title>Recent Deposits</Title>
+      <Title>Pending Fees</Title>
       <Typography component="p" variant="h4">
-        $3,024.00
+        &#x20B9;1,020.00
       </Typography>
       <Typography color="textSecondary" className={classes.depositContext}>
        fees to be paid

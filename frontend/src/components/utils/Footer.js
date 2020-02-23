@@ -41,7 +41,7 @@ export default function Footer() {
     <div style={{ marginTop: '20vh'}}>
       <footer className={classes.footer}>
         <Container maxWidth="sm">
-          <Typography variant="body1">My sticky footer can be found here.</Typography>
+          <Typography variant="body1">Copyright &copy; 2020 All Rights Reserved by FourFoldKit</Typography>
           <Copyright />
         </Container>
       </footer>

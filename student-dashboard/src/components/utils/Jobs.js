@@ -3,7 +3,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Container from '@material-ui/core/Container';
 import SideDrawer from './SideDrawer';
-import SimpleCard from './cards';
 import JobList from './JobList';
 import LoadingSpinner from './LoadingSpinner';
 import { useHttpClient } from '../hooks/http-hook';
@@ -117,11 +116,8 @@ const Jobs = () => {
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />
         <Container maxWidth="lg" className={classes.container}>
-          {countJobs}
-            {/* <SimpleCard />
-            <SimpleCard />
-            <SimpleCard /> */}
-              hi
+          <h2>Showing {countJobs} Job Offers</h2>
+          <hr></hr>
               {isLoading && (
                 <div className="center">
                     <LoadingSpinner />
